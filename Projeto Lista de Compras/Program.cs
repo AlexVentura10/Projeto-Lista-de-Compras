@@ -67,7 +67,7 @@ namespace Projeto_Lista_de_Compras
                             {
                                 soma += preço;
                             }
-                            Console.WriteLine($"Preço total: {soma}");
+                            Console.WriteLine($"Preço total: {soma.ToString("c")}");
                         }
 
                         else
