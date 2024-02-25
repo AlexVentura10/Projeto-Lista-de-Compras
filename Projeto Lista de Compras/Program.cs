@@ -63,7 +63,7 @@ namespace Projeto_Lista_de_Compras
                             }
 
                             int soma = 0;
-                            foreach (int preço in listPreço) // loop foreach para iterar sobre todos os valores da lista.   Para cada preço (int preço) na listPreço, o programa faz a soma na linha "soma += preço".
+                            foreach (int preço in listPreço) 
                             {
                                 soma += preço;
                             }
@@ -72,7 +72,7 @@ namespace Projeto_Lista_de_Compras
 
                         else
                         {
-                            Console.WriteLine("Você não possui nenhum produto na sua lista");
+                            Console.WriteLine("Você não possui nenhum produto na sua lista.");
                         }
 
 
@@ -90,9 +90,9 @@ namespace Projeto_Lista_de_Compras
 
                             Console.WriteLine("Digite o número do protudo que deseja remover");
 
-                            if (int.TryParse(Console.ReadLine(), out var remover)) //lê a entrada do usuário e tenta converter essa entrada para um número inteiro e armazena na var "remover"
+                            if (int.TryParse(Console.ReadLine(), out var remover)) 
                             {
-                                listCompras.RemoveAt(remover - 1); //removendo o produto selecionado da "listCompras"
+                                listCompras.RemoveAt(remover - 1); 
                                 Console.Clear();
                                 Console.WriteLine("Produto removido com sucesso.");
                             }
